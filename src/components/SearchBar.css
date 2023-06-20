@@ -1,0 +1,22 @@
+.search-bar {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.search-icon{
+    color: #7225b9;
+}
+.search-items {
+    padding: 10px;
+    border: 2px solid #7225b9;
+    border-radius: 20px;
+    color: 7225b9;
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+}
+input , input:focus{
+    outline: none;
+    border: none;
+}

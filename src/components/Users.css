@@ -1,0 +1,213 @@
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    scrollbar-width: thin !important;
+    scrollbar-color: transparent transparent !important;
+}
+
+.table-container {
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+/* For Firefox */
+.table-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    /* Adjust the color as needed */
+}
+
+
+
+.full-width-table {
+    width: 100%;
+    max-width: 800px;
+}
+
+button {
+    all: unset
+}
+
+button:active {
+    color: #7225b9;
+    background-color: white;
+}
+
+.pagination-container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin: auto;
+
+}
+
+.pagination_buttons {
+    background-color: rgba(114, 37, 185, 0.2);
+    border: 1px solid #7225b9;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+}
+
+tr,
+td {
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+
+th {
+    padding: 20px 10px 20px 10px;
+}
+
+input {
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.edit-icon {
+    color: #7225b9;
+}
+
+.delete-icon {
+    color: rgb(215, 8, 8);
+}
+
+.page-active {
+    padding: 10px;
+    background-color: rgba(114, 37, 185, 0.2);
+    border: 2px solid rgba(114, 37, 185, 1);
+    text-align: center;
+    border-radius: 50%;
+}
+
+.active {
+    background-color: rgba(114, 37, 185, 0.2);
+    border: 2px solid rgba(114, 37, 185, 1);
+}
+
+.input-checkbox {
+    cursor: pointer;
+}
+
+.button-section {
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+}
+
+button:disabled {
+    background-color: rgb(196, 195, 195);
+    border: 1px solid darkgray;
+}
+
+.select-button,
+.deleteSelected-button {
+    padding: 10px;
+    background-color: rgba(114, 37, 185, 0.2);
+    border: 2px solid rgba(114, 37, 185, 1);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    text-align: center;
+}
+
+.deleteSelected-button {
+    background-color: rgb(233, 57, 57);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+.edit-buttons {
+    padding: 10px;
+    border: 2px solid #7225b9;
+    background-color: rgba(114, 37, 185, 0.2);
+    border-radius: 20px;
+}
+
+.edit-buttons.cancel {
+    background-color: rgb(233, 57, 57);
+    border: none;
+    color: white;
+}
+
+/*Mobile devices*/
+.table-container {
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+  
+  /* For Firefox */
+  .table-container::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .table-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    /* Adjust the color as needed */
+  }
+  
+  .full-width-table {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  @media (max-width: 768px) {
+    .full-width-table {
+      max-width: none;
+    }
+    
+    tr,
+    td {
+      display: block;
+     
+    }
+    
+    td:before {
+      content: attr(data-label);
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    
+    .icons {
+      justify-content: flex-start;
+    }
+    
+   
+    .pagination-container {
+      width: 100%;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    
+    .pagination_buttons {
+      margin: 5px;
+      padding: 8px;
+    }
+  }
+  
